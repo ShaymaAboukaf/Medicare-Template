@@ -1,0 +1,180 @@
+/* NavBar */
+
+.navbar .brand-wrapper {
+  width: 170px;
+  text-align: center;
+}
+
+.navbar .brand-wrapper::before {
+  content: "T";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  top: 50%;
+  left: 0;
+  margin-top: -15px;
+  background-color: dodgerblue;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  padding: 1rem;
+  margin-right: 3rem;
+}
+
+.navbar .navbar-nav {
+  font-weight: 500;
+}
+
+.navbar .navbar-toggler:focus {
+  box-shadow: none;
+  border: 2px solid dodgerblue;
+}
+
+/* Showcase */
+
+.showcase {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .showcase {
+    display: flex;
+    align-items: stretch;
+  }
+  .wrapper {
+    height: 100%;
+  }
+}
+
+.showcase .element {
+  top: 50px;
+  left: 50px;
+}
+
+@media screen and (max-width: 250px) {
+  .text-box h1 {
+    font-size: 1.2rem;
+  }
+  .text-box p {
+    font-size: 1rem;
+  }
+}
+
+/* Services */
+
+.services .main-title h1 {
+  position: relative;
+}
+
+.services .main-title h1::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background-color: #333;
+  border-radius: 5px;
+}
+
+/* Providing */
+@media screen and (min-width: 576px) {
+  .providing .providing-text {
+    width: 45%;
+  }
+}
+
+.line {
+  position: relative;
+  padding-bottom: 1.3rem;
+  margin-bottom: 3rem;
+}
+
+.line::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background-color: #333;
+  border-radius: 5px;
+}
+@media screen and (min-width: 576px) {
+  .app .line::after,
+  .providing .line::after {
+    left: 0;
+    transform: translateX(0);
+  }
+}
+
+/* Testimonials */
+
+.testimonials .test-wrapper,
+.footer .footer-wrapper {
+  background-image: linear-gradient(to right top, dodgerblue 70%, white);
+  border-radius: 50px;
+}
+
+.carousel-indicators button {
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 50%;
+  background-color: black !important;
+  margin-right: 0.5rem !important;
+}
+
+.testimonials img {
+  height: 40px;
+}
+
+@media screen and (max-width: 380px) {
+  .test-wrapper h1,
+  h5,
+  h6 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  .test-wrapper q {
+    font-size: 0.7rem;
+  }
+  .carousel {
+    padding: 0 !important;
+  }
+}
+
+/* Articels */
+
+.articles img {
+  height: 200px;
+}
+.card:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Footer */
+.main-logo span {
+  background-color: white;
+  color: dodgerblue;
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 576px) {
+  .footer h4 {
+    font-size: 1.3rem;
+  }
+  .footer h6 {
+    font-size: 1rem;
+  }
+}
